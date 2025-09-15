@@ -31,7 +31,7 @@ urlpatterns = [
     path("", include(router.urls)),
     path("users/", include("users.urls", namespace="users")),
     path("learning/", include("learning.urls", namespace="learning")),
-    path("test/", include("tests.urls", namespace="tests")),
+    path("test/", include("tests.urls", namespace="test")),
     path("questions/", include("tests.urls")),
     path(
         "swagger<format>/", schema_view.without_ui(cache_timeout=0), name="schema-json"
