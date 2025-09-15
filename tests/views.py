@@ -1,4 +1,4 @@
-from rest_framework import viewsets, permissions, filters, generics
+from rest_framework import permissions, generics
 from rest_framework.viewsets import ModelViewSet
 
 from tests.models import Test, TestAttempt, Question
