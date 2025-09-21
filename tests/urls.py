@@ -16,9 +16,9 @@ router.register(r"tests", TestViewSet, basename="tests")
 
 urlpatterns = [
     path("", include(router.urls)),
-    path("/<int:pk>/", TestDetailAPIView.as_view(), name="test-detail"),
+    path("<int:pk>/", TestDetailAPIView.as_view(), name="test-detail"),
     path(
-        "/<int:test_id>/attempts/",
+        "<int:test_id>/attempts/",
         TestAttemptCreateAPIView.as_view(),
         name="test-attempt-create",
     ),
